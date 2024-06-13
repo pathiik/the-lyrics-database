@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lyrics Database</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/lyrics-icon.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Pacifico&display=swap&family=Roboto&family=Playfair+Display&family=Indie+Flower&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section id="header-top">
+            <figure>
+                <img class="header-logo" src="images/lyrics-icon.png" alt="Website Logo">
+            </figure>
+            <h1 class="header-title">The Lyrics Database</h1>
+        </section>
+        <div id="header-bottom">
+            <nav>
+                <ul>
+                    <li><a href="#" id="nav-watermelon-sugar" onclick="loadLyrics('watermelon-sugar')">Watermelon
+                            Sugar</a></li>
+                    <li><a href="#" id="nav-take-me-to-church" onclick="loadLyrics('take-me-to-church')">Take Me To Church</a></li>
+                    <li><a href="#" id="nav-happy" onclick="loadLyrics('happy')">Happy</a></li>
+                    <li>
+                        <a href="#" class="nav-dropdown">More Songs</a>
+                        <menu class="nav-dropdown-content">
+                            <li><a href="#" id="nav-uptown-funk" onclick="loadLyrics('uptown-funk')">Uptown Funk</a></li>
+                            <li><a href="#" id="nav-without-me" onclick="loadLyrics('without-me')">Without Me</a></li>
+                            <li><a href="#" id="nav-beautiful-things" onclick="loadLyrics('beautiful-things')">Beautiful Things</a></li>
+                            <li><a href="#" id="nav-perfect" onclick="loadLyrics('perfect')">Perfect</a></li>
+                            <li><a href="#" id="nav-cruel-summer" onclick="loadLyrics('cruel-summer')">Cruel Summer</a></li>
+                        </menu>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section id="lyrics-section">
+            <!-- Lyrics will be displayed here. -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 The Lyrics Database</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/f6f6f3aa3e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

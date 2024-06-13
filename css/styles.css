@@ -1,0 +1,293 @@
+/* Resetting the default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting the font family and background color for the body element */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+}
+
+/* Styling the top part of header */
+header section#header-top {
+    background-color: #333;
+    color: #fff;
+    padding: 0.1em 0;
+    display: flex;
+    gap: 0px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+header section#header-top img.header-logo {
+    width: 40px;
+    padding-top: 5px;
+}
+
+header section#header-top h1.header-title {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Styling the bottom part of header */
+header div#header-bottom {
+    background-color: #333;
+    color: #fff;
+    padding: 0.1em 0;
+}
+
+/* Styling the navigation bar */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+/* Styling the list items of the navigation bar */
+nav ul li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+/* Styling the links of the navigation bar */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1em;
+    display: block;
+}
+
+/* Styling the hover effect of the links */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling the dropdown menu */
+nav ul li a.nav-dropdown {
+    cursor: pointer;
+}
+
+/* Styling the dropdown content */
+nav ul li menu.nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+/* Styling the links of the dropdown content */
+nav ul li menu.nav-dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Styling the hover effect of the links */
+nav ul li menu.nav-dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+/* Displaying the dropdown content when hovering over the dropdown menu */
+nav ul li:hover menu.nav-dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling the active link */
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Styling the sticky header */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.sticky ~ .main {
+    margin-top: 50px;
+}
+
+/* Styling the main content */
+main {
+    padding: 1em;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Styling the footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    width: 100%;
+}
+
+/* Styling the song title */
+main section#lyrics-section h1.song-title {
+    font-family: 'Pacifico', cursive;
+    color: #333;
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+/* Styling the song artist */
+main section#lyrics-section h2.song-artist {
+    font-family: 'Pacifico', cursive;
+    color: #333;
+    margin-bottom: 0.5em;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* Styling the lyrics section */
+main section#lyrics-section p {
+    margin: 1em 0;
+}
+
+/* Styling the song moods */
+.peaceful {
+    color: #2e8b57;
+    font-style: italic;
+}
+
+.sad {
+    color: darkcyan;
+    font-style: oblique;
+}
+
+.happy {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.groovy {
+    color: #800080;
+    font-family: 'Indie Flower', cursive;
+}
+
+/* Styling the lyrics font */
+.indie-flower {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2rem;
+}
+
+.playfair-display {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Styling the span part of the lyrics */
+.span-strawberry {
+    color: #ff6347;
+}
+
+.span-summer {
+    color: #ffcc00;
+}
+
+.span-breathe-in {
+    font-size: 16px;
+    color: #47eaff;
+}
+
+.span-breathe-out {
+    font-size: 26px;
+    color: #ee9133;
+}
+
+.span-high {
+    font-size: 30px;
+    color: #ff0000;
+    text-transform: uppercase;
+}
+
+.span-watermelon {
+    color: #ff3e96;
+}
+
+.span-worship {
+    font-size: 20px;
+    color: #e7991d;
+}
+
+/* Styling parts of the song */
+.verse-1 {
+    font-size: 1.2em;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    color: #d02096;
+}
+
+.pre-chorus {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #b5e926;
+}
+
+.chorus {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4em;
+    color: #d72323;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.chorus-add {
+    color: #800080;
+}
+
+/* Styling the social media icons */
+nav.links-nav ul li a {
+    padding: 0px;
+}
+
+nav.links-nav ul li a:hover {
+    background-color: transparent;
+}
+
+nav.links-nav ul li a i {
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+nav.links-nav ul li a i:hover {
+    transform: scale(1.1);
+}
+
+p.song-name {
+    margin: 0 !important;
+}
+
+figure img.song-cover {
+    margin-top: 5px;
+    width: 300px;
+    height: 300px;
+}
